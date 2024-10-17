@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { StyleSheet, Text, View, TouchableOpacity, Modal } from "react-native";
 
 import TodoModal from "./TodoModal";
-import colors from "../app/colors";
+import colors from "../src/app/colors";
 
 // import { client, databases, ID } from "../../appwrite";
 

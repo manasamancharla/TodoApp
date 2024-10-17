@@ -10,10 +10,10 @@ import {
 	TextInput,
 	Keyboard,
 } from "react-native";
-import { AntDesign, Ionicons } from "@expo/vector-icons";
+import { AntDesign, Fontisto } from "@expo/vector-icons";
 import { useState } from "react";
 
-import colors from "../app/colors";
+import colors from "@/app/colors";
 
 interface Todo {
 	id: number;
@@ -47,10 +47,9 @@ const TodoModal: React.FC<TodoModalProps> = ({
 		return (
 			<View style={styles.todoContainer}>
 				<TouchableOpacity onPress={() => toggleTodoCompleted(index)}>
-					<Ionicons
-						//@ts-ignore
-						name={todo.completed ? "ios-square" : "ios-square-outline"}
-						size={24}
+					<Fontisto
+						name={todo.completed ? "checkbox-active" : "checkbox-passive"}
+						size={20}
 						color={colors.gray}
 						style={{ width: 32 }}
 					/>

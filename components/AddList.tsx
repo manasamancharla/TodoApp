@@ -13,7 +13,7 @@ import {
 	FontAwesome5,
 	MaterialIcons,
 } from "@expo/vector-icons";
-import colors from "../app/colors";
+import colors from "@/app/colors";
 
 interface IconData {
 	color: string;
